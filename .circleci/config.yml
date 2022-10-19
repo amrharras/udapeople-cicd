@@ -389,7 +389,7 @@ jobs:
       - destroy-environment
       - revert-migrations
 
-cleanup:
+  cleanup:
     docker:
       - image: cimg/base:stable
     steps:
@@ -416,7 +416,6 @@ cleanup:
               aws cloudformation delete-stack --stack-name "udapeople-frontend-${OldWorkflowID}"
             fi
             
-
 workflows:
   default:
     jobs:

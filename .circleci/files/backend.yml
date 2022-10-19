@@ -39,9 +39,3 @@ Resources:
           Value: !Sub backend-${ID}
         - Key: Project
           Value: Udapeople
-
-  InstanceEIP:
-    Type: AWS::EC2::EIP
-    Properties:
-      Domian: vpc
-      InstanceId: !Ref EC2Instance
